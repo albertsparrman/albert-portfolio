@@ -1,0 +1,19 @@
+<nav [ngClass]="{'navbar': true, 'navbar-smaller': smallMenu}">
+    <a href="">
+        <img src="" alt="Logo">
+    </a>
+    <ul [ngClass]="'nav-link-list'">
+        <li>
+            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')">Home</button>
+        </li>
+        <li>
+            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')">Projects</button>
+        </li>
+        <li>
+            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')">About</button>
+        </li>
+        <li>
+            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')">Contact</button>
+        </li>
+    </ul>
+</nav>
