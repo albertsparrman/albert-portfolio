@@ -1,7 +1,135 @@
 .hero {
     height: 100vh;
-    background-color: #18181a;
-    box-shadow: inset 0px 50px 400px #00000062;
+    background-color: var(--color-primary);
+    box-shadow: inset 0px 50px 400px #00000076;
+    background-color: #182720;
+    background: linear-gradient(135deg, #192c2355 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(225deg, #192c23 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(315deg, #192c2355 25%, transparent 25%) 0px 0/ 28px 28px, linear-gradient(45deg, #192c23 25%, #182720 25%) 0px 0/ 28px 28px;
     background-image: url(../../../assets/images/PortfolioBackground.png);
     background-size: cover;
+    background-position: top right;
+    position: relative;
+}
+
+.hero-content {
+    padding: 30px;
+    padding-top: 100px;
+    height: calc(100% - 160px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-article {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.stripe-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 70%;
+    background: linear-gradient(#d3c7ae00, #d3c7ae24);
+}
+
+.stripe-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 70%;
+    background: linear-gradient(#00000016, #00000000);
+}
+
+
+.hero-carousel-position-pointers {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    width: 200px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-carousel-position-pointer {
+    height: 5px;
+    background-color: var(--color-light);
+    border-radius: 2px;
+    width: 33%;
+    transition: 0.3s;
+}
+
+.hero-carousel-position-pointer-active {
+    height: 8px;
+    width: 40%;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 5px 10px #00000052;
+    background: linear-gradient(340deg, var(--color-secondary) 20%, var(--color-primary) 150%);
+}
+
+.hero-arrow-button {
+    border: none;
+    background-color: transparent;
+}
+
+.hero-arrow-button > img {
+    width: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 105%; 
+}
+
+.hero-subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-text-content {
+    margin-top: 15px;
+}
+
+.hero-about-image {
+    width: 300px;
+}
+
+@media (max-width: 880px) {
+    .hero-about-image {
+        display: none;
+    }
+
+    .hero-subtitle { 
+        font-size: 4vw;
+    }
+    h1 {
+        font-size: 7vw;
+    }
+
+    .hero-content {
+        padding: 25px;
+        padding-top: 100px;
+    }
+    
+    .hero-article {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 540px) { 
+    .hero-subtitle { 
+        font-size: 5.5vw;
+    }
+    h1 {
+        font-size: 9.5vw;
+    }
+
+    .hero-article {
+        margin: 0px;
+    }
 }

@@ -10,6 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class NavigationComponent {
   smallMenu: boolean = false
+  home: boolean = false
+  projects: boolean = false
+  about: boolean = false
+  contact: boolean = false
 
   @HostListener('window:scroll', ['$event'])
 
@@ -20,10 +24,18 @@ export class NavigationComponent {
     else {
       this.smallMenu = true
     }
+
+    if(window.scrollY > 1 && window.screenY < 200 ) {
+      this.home = true
+    }
   }
 
   scrollToElement($element: string): void {
     document.getElementById($element)?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+    this.onScroll()
+  }
 
+  test() {
+    this.home = !this.home
   }
 }

@@ -1,22 +1,23 @@
 .navbar {
-    padding: 25px 30px;
+    padding: 25px 50px;
     position: fixed;
     z-index: 100;
     transition: 0.2s;
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 60px);
+    width: calc(100% - 100px);
     align-items: center;
 }
 
-.navbar-smaller { 
-    padding: 15px 20px;
+.navbar-smaller {
+    padding: 20px 25px;
     margin: 25px;
     width: calc(100% - 90px);
     background-color: #ffffff07;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 30px #ffffff06;
     border-radius: 10px;
+    border: 1px solid #ffffff1a;
 }
 
 .nav-link-list {
@@ -26,13 +27,189 @@
     list-style: none;
 }
 
+.nav-link-container {
+    position: relative;
+}
+
 .link-button {
+    font-size: 14px;
     color: var(--color-light);
     background-color: transparent;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
 }
 
-@media  (max-width: 660px) {
-    
+.nav-marker-hidden {
+    position: absolute;
+    width: 6.5px;
+    height: 6.5px;
+    border-radius: 6px;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px 20px var(--color-secondary);
+    background: linear-gradient(340deg, var(--color-secondary) 20%, var(--color-primary) 150%);
+    left: calc(50% - 4px);
+    opacity: 0;
+    transform: scale(0.5);
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+
+.nav-marker {
+    bottom: -2px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+.hamburger-menu {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.hamburger-menu-span {
+    display: flex;
+    background-color: rgb(244, 244, 244);
+    border-radius: 6px;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.hamburger-menu1 {
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.hamburger-menu2 {
+    width: 65%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.hamburger-menu3 {
+    width: 85%;
+    right: 0;
+    bottom: 0;
+}
+
+.hamburger-menu-backdrop {
+    display: none;
+}
+
+.hamburger-menu-top {
+    display: none;
+}
+
+.nav-icon {
+    height: 25px;
+    display: none;
+}
+
+.logo {
+    height: 45px;
+    transition: height 0.3s;
+}
+.navbar-smaller .logo { 
+    height: 36px;
+}
+
+
+@media (max-width: 580px) {
+    .navbar {
+        padding: 20px 25px;
+        margin: 25px;
+        width: calc(100% - 90px);
+        background-color: #ffffff07;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 30px #ffffff06;
+        border-radius: 10px;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .hamburger-menu-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+    }
+
+    #hamburgerMenu:checked ~ .hamburger-menu-backdrop {
+        display: flex;
+        position: fixed;
+        background-color: #12121275;
+        backdrop-filter: blur(10px);
+        width: 100vw;
+        height: 100vh;
+        top: -25px;
+        left: -25px;
+    }
+
+    .hamburger-menu-close {
+        padding: 5px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        background-color: #ffffff2b;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-link-list {
+        pointer-events: none;
+        position: fixed;
+        transition: right 0.5s;
+        top: -25px;
+        right: -315px;
+        height: 100vh;
+        width: 300px;
+        max-width: 85vw;
+        background-color: var(--color-dark);
+        background-position: center;
+        background-size: cover;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    #hamburgerMenu:checked+.nav-link-list {
+        pointer-events: auto;
+        display: flex;
+        right: -15px;
+        box-shadow: 0px 0px 30px 20px #00000053;
+    }
+
+    .link-button {
+        width: 100%;
+        padding: 25px 30px;
+        text-align: left;
+        color: var(--color-light);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .link-button:hover {
+        background-color: #00000016;
+    }
+
+    .nav-marker-hidden {
+        display: none;
+    }
 }

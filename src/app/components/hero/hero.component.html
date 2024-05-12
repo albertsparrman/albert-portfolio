@@ -1,6 +1,26 @@
 <section [ngClass]="'hero'">
-    <article [ngClass]="'hero-content'">
-        <h1>aaa</h1>
-    </article>
+    <span [ngClass]="'stripe-left'"></span>
+    <span [ngClass]="'stripe-right'"></span>
+
+    <section [ngClass]="'hero-content'">
+        <button ngClass="hero-arrow-button"><img class="arrow-left" src="../../../assets/images/icons/arrow.svg" alt="Scroll left"></button>
+        <article [ngClass]="['hero-article']">
+            <section>
+                <h4 ngClass="hero-subtitle">Hello, I'm Albert</h4>
+                <h1>Frontend developer and designer</h1>
+                <p ngClass="hero-text-content">aaaaaaaaaaaaaaaa</p>
+            </section>
+            <img ngClass="hero-about-image" src="../../../assets/images/heroImage.png" alt="">
+        </article>
+        <button ngClass="hero-arrow-button"><img class="arrow-right" src="../../../assets/images/icons/arrow.svg" alt="Scroll right"></button>
+        <section [ngClass]="'hero-carousel-position-pointers'">
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': false}"></span>
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': true}"></span>
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': false}"></span>
+        </section>
+    </section>
 </section>
 <div id="fre">aaa</div>

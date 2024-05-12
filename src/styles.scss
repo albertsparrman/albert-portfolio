@@ -1,17 +1,66 @@
 :root {
-    --color-light: #ffffff;
-    --color-dark: #000000;
-    --color-primary: #1e3f2e;
-    --color-secondary: #eddecc;
+    --color-light: #ececec;
+    --color-dark: #171718;
+    --color-primary: #1e3227;
+    --color-secondary: #D3C7AE;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+li {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+h4 {
+    font-family: "Alike", serif;
+    color: var(--color-secondary);
+}
+
+p, a, li, button {
+    font-family: "Inter", sans-serif;
+    color: var(--color-light);
+}
+
+.dp-none {
+    display: none;
+}
+
+.arrow-left {
+    transform: rotate(90deg);
+}
+
+.arrow-right {
+    transform: rotate(-90deg);
+}
+
+button {
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+button:active {
+    transform: scale(0.86);
 }
