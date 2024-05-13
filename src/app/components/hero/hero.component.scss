@@ -8,6 +8,7 @@
     background-size: cover;
     background-position: top right;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -22,11 +23,79 @@
 }
 
 .hero-article {
+    display: none;
     width: 800px;
+}
+
+.hero-article-show {
+    display: flex;
+    align-items: center;
+    animation: articleShow 1s ease-out 1;
+}
+
+@keyframes articleShow {
+    0% {
+        margin-bottom: -100px;
+        opacity: 0;
+    }
+}
+
+/* 
+.hero-scroll-in-left {
+    animation: scrollInLeftOutRight 0.8s 1 linear;
+    width: 800px;
+    opacity: 1;
     display: flex;
     align-items: center;
     margin: 0 40px;
 }
+
+.hero-scroll-out-left {
+    animation: scrollInRightOutLeft 0.8s 1 linear reverse;
+    pointer-events: none;
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.hero-scroll-in-right {
+    animation: scrollInRightOutLeft 0.8s 1 linear;
+}
+
+.hero-scroll-out-right {
+    animation: scrollInLeftOutRight 0.8s 1 linear reverse;
+    pointer-events: none;
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+}
+
+@keyframes scrollInRightOutLeft {
+    0%{
+        width: 800px;
+        margin-left: -1000px;
+        opacity: 0;
+        position: static;
+    }
+    100% {
+        width: 800px;
+        position: static;
+    }
+}
+
+@keyframes scrollInLeftOutRight {
+    0%{
+        width: 800px;
+        margin-right: -1000px;
+        opacity: 0;
+        position: static;
+    }
+    100% {
+        width: 800px;
+        position: static;
+    }
+}
+ */
 
 .stripe-left {
     position: absolute;
@@ -99,6 +168,10 @@ h1 {
 .hero-about-image {
     width: 300px;
 }
+
+
+
+
 
 #fre  {
     height: 100vh;

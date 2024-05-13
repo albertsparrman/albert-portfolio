@@ -1,6 +1,6 @@
 .navbar {
+    position: absolute;
     padding: 25px 50px;
-    position: fixed;
     z-index: 100;
     transition: 0.2s;
     display: flex;
@@ -10,6 +10,7 @@
 }
 
 .navbar-smaller {
+    position: fixed;
     padding: 20px 25px;
     margin: 25px;
     width: calc(100% - 90px);
