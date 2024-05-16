@@ -1,0 +1,43 @@
+.projects {
+    height: 100vh;
+    background: linear-gradient(#0000005f, #00000000), url(../../../assets/images/bakground1.png) ;
+    background-size: cover;
+    box-shadow: inset 0px 250px 150px -150px #0000005e;
+
+    margin-top: -90px;
+}
+
+.projects h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.featured-project-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 120px;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+.project-links {
+    display: flex; 
+    gap: 25px;
+}
+
+.projects-link-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0000002e;
+    font-family: "Alike", serif;
+    color: var(--color-secondary);
+}
+
+.projects-link-button img {
+    height: 20px;
+}

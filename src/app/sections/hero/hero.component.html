@@ -1,0 +1,40 @@
+<section [ngClass]="'hero'" id="hero">
+    <span [ngClass]="'stripe-left'"></span>
+    <span [ngClass]="'stripe-right'"></span>
+
+ 
+    <section [ngClass]="'hero-content'">
+        <button (click)="heroScrollLeft()" ngClass="hero-arrow-button"><img class="arrow-left" src="../../../assets/images/icons/arrow.svg" alt="Scroll left"></button>
+
+
+        <article [ngClass]="{'hero-article': true, 'hero-article-show': heroArticle1}">
+            <img [ngClass]="'about'" src="../../../assets/images/about-me-rotated.svg" alt="">
+            <section>
+                <h4 ngClass="hero-subtitle">Hello, I'm Albert</h4>
+                <h1>Frontend developer and designer</h1>
+                <p ngClass="hero-text-content">aaaaaaaaaaaaaaaa</p>
+            </section>
+            <img ngClass="hero-about-image" src="../../../assets/images/heroImage.png" alt="">
+        </article>
+
+        
+        <article [ngClass]="{'hero-article': true, 'hero-article-show': heroArticle2}">
+            <h1>2</h1>
+        </article>
+        <article [ngClass]="{'hero-article': true, 'hero-article-show': heroArticle3}">
+            <h1>3</h1>
+        </article>
+
+
+        <button (click)="heroScrollRight()" ngClass="hero-arrow-button"><img class="arrow-right" src="../../../assets/images/icons/arrow.svg"
+                alt="Scroll right"></button>
+        <section [ngClass]="'hero-carousel-position-pointers'">
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle1}"></span>
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle2}"></span>
+            <span
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle3}"></span>
+        </section>
+    </section>
+</section>

@@ -7,18 +7,24 @@
     justify-content: space-between;
     width: calc(100% - 100px);
     align-items: center;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-smaller {
     position: fixed;
     padding: 20px 25px;
-    margin: 25px;
+    margin-top: 15px;
     width: calc(100% - 90px);
     background-color: #ffffff07;
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 30px #ffffff06;
     border-radius: 10px;
     border: 1px solid #ffffff1a;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-link-list {
@@ -124,13 +130,18 @@
 
 @media (max-width: 580px) {
     .navbar {
+        position: fixed;
         padding: 20px 25px;
-        margin: 25px;
+        margin-top: 15px;
         width: calc(100% - 90px);
         background-color: #ffffff07;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
         box-shadow: 0px 0px 30px #ffffff06;
         border-radius: 10px;
+        border: 1px solid #ffffff1a;
+        max-width: 1920px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .logo {
