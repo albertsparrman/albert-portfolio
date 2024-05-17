@@ -3,7 +3,7 @@
         <section [ngClass]="'featured-project-container'">
             <h2>Projects</h2>
             <section [ngClass]="'project-links'">
-                <button [ngClass]="'projects-link-button'" (click)="scrollToElement('hero')">Featured project <img
+                <button [ngClass]="'projects-link-button'" (click)="test()">Featured project <img
                         src="../../../assets/images/icons/one-arrow.svg" alt=""></button>
                 <button [ngClass]="'projects-link-button'" (click)="scrollToElement('hero')">My projects <img
                         src="../../../assets/images/icons/two-arrows.svg" alt=""></button>
@@ -11,5 +11,6 @@
                         src="../../../assets/images/icons/three-arrows.svg" alt=""></button>
             </section>
         </section>
+        <p> {{projectsJson[0].name}}</p>
     </section>
 </section>
