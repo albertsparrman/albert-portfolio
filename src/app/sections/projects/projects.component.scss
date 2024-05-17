@@ -1,10 +1,8 @@
 .projects {
-    height: 100vh;
-    background: linear-gradient(#0000005f, #00000000), url(../../../assets/images/bakground1.png) ;
+    background: linear-gradient(#0000005f, #00000000), url(../../../assets/images/bakground2.png) ;
     background-size: cover;
     box-shadow: inset 0px 250px 150px -150px #0000005e;
-
-    margin-top: -90px;
+    margin-top: -70px;
 }
 
 .projects h2 {
@@ -16,11 +14,11 @@
     max-width: 1920px;
     margin: 0 auto;
     padding: 120px;
-    padding-top: 140px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
 
-.project-links {
+.project-nav-links {
     display: flex; 
     gap: 25px;
 }
@@ -32,7 +30,7 @@
     padding: 16px 20px;
     font-size: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: #0000002e;
     font-family: "Alike", serif;
     color: var(--color-secondary);
@@ -40,4 +38,71 @@
 
 .projects-link-button img {
     height: 20px;
+}
+
+.my-projects {
+    display: grid;
+    grid-template-columns: 
+  repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-rows: masonry;
+  gap: 40px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 120px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #0000002e;
+}
+
+.project h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.project-image {
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: left top;
+    aspect-ratio: 8/5;
+    border: none;
+}
+
+.project-contents {
+    height: 100%;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    word-wrap: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff25;
+    width: fit-content;
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.project-links img {
+    height: 18px;
+}
+
+@media (max-width: 1200px) {
+
 }

@@ -10,11 +10,10 @@ import projects  from '../../../assets/projects.json'
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  projectsJson: {name: string, description: string}[] = projects
+  projectsJson: {name: string, description: string, image: string, website: string, github: string, figma: string}[] = projects
+  loadedProjects: number = 3
 
-  test() {
-    console.log(this.projectsJson[0].name)
-  }
+
   
   scrollToElement($element: string): void {
     document.getElementById($element)?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
