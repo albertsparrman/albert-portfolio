@@ -1,35 +1,54 @@
-
-[
-    {
-        "name": "Basecamp",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
-        "image": "../../../assets/images/projects/Basecamp.png",
-        "website": "bla",
-        "github": "blala",
-        "figma": "nleo"
-    },
-    {
-        "name": "Land Puzzle",
-        "description": "aaaa",
-        "image": "../../../assets/images/projects/Basecamp.png",
-        "website": "none",
-        "github": "blala",
-        "figma": "none"
-    },
-    {
-        "name": "Land Puzzle",
-        "description": "aaaa",
-        "image": "../../../assets/images/projects/Basecamp.png",
-        "website": "none",
-        "github": "blala",
-        "figma": "none"
-    },
-    {
-        "name": "Land Puzzle",
-        "description": "aaaa",
-        "image": "../../../assets/images/projects/Basecamp.png",
-        "website": "none",
-        "github": "blala",
-        "figma": "none"
-    }
-]
+{
+    "myProjects": [
+        {
+            "name": "Basecamp",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "bla",
+            "github": "blala",
+            "figma": "nleo"
+        },
+        {
+            "name": "Land Puzzle",
+            "description": "aaaa",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "none",
+            "github": "blala",
+            "figma": "none"
+        },
+        {
+            "name": "Land Puzzle",
+            "description": "aaaa",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "none",
+            "github": "blala",
+            "figma": "none"
+        },
+        {
+            "name": "Land Puzzle",
+            "description": "aaaa",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "none",
+            "github": "blala",
+            "figma": "none"
+        }
+    ],
+    "groupProjects": [
+        {
+            "name": "Land Puzzle",
+            "description": "aaaa",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "none",
+            "github": "blala",
+            "figma": "none"
+        },
+        {
+            "name": "Land Puzzle",
+            "description": "aaaa",
+            "image": "../../../assets/images/projects/Basecamp.png",
+            "website": "none",
+            "github": "blala",
+            "figma": "none"
+        }
+    ]
+}

@@ -10,9 +10,8 @@ import projects  from '../../../assets/projects.json'
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  projectsJson: {name: string, description: string, image: string, website: string, github: string, figma: string}[] = projects
-  loadedProjects: number = 3
-
+  myProjectsJson: {name: string, description: string, image: string, website: string, github: string, figma: string}[] = projects.myProjects
+  groupProjectsJson: {name: string, description: string, image: string, website: string, github: string, figma: string}[] = projects.groupProjects
 
   
   scrollToElement($element: string): void {
