@@ -1,6 +1,10 @@
 <nav [ngClass]="{'navbar': true, 'navbar-smaller': smallMenu}">
-    <a href="">
-        <img [ngClass]="'logo'" src="../../../assets/images/icons/LogoBig.svg" alt="Logo">
+    <a ngClass="logo-container" href="">
+        <img [ngClass]="'logo'" src="../../../assets/images/icons/LogoSmall.svg" alt="Logo">
+        <div ngClass="logo-text">
+            <p ngClass="logo-text1">ALBERT</p>
+            <p ngClass="logo-text2">SPARRMAN</p>
+        </div>
     </a>
     <label [ngClass]="'hamburger-menu'" for="hamburgerMenu">
         <span [ngClass]="['hamburger-menu1', 'hamburger-menu-span']"></span>
@@ -23,7 +27,7 @@
             <span [ngClass]="{'nav-marker-hidden': true, 'nav-marker': projects}"></span>
         </li>
         <li [ngClass]="'nav-link-container'">
-            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')"><img [ngClass]="'nav-icon'" src="../../../assets/images/icons/info.svg" alt="">About</button>
+            <button [ngClass]="'link-button'" (click)="scrollToElement('fre')"><img [ngClass]="'nav-icon'" src="../../../assets/images/icons/info.svg" alt="">About me</button>
             <span [ngClass]="{'nav-marker-hidden': true, 'nav-marker': about}"></span>
         </li>
         <li [ngClass]="'nav-link-container'">
