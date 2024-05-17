@@ -1,7 +1,10 @@
 .projects {
-    background: linear-gradient(#0000005f, #00000000), url(../../../assets/images/bakground2.png) ;
+    background: linear-gradient(#0000005f, #00000000), url(../../../assets/images/bakground.jpg) ;
     background-size: cover;
     box-shadow: inset 0px 250px 150px -150px #0000005e;
+    max-width: 1920px;
+    padding: 50px;
+    margin: 0 auto;
     margin-top: -70px;
 }
 
@@ -11,11 +14,9 @@
 }
 
 .featured-project-container {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 120px;
-    padding-top: 120px;
+    padding-top: 70px;
     padding-bottom: 50px;
+
 }
 
 .project-nav-links {
@@ -40,15 +41,12 @@
     height: 20px;
 }
 
-.my-projects {
+.projects-container {
     display: grid;
     grid-template-columns: 
   repeat(auto-fit, minmax(360px, 1fr));
   grid-template-rows: masonry;
   gap: 40px;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 120px;
 }
 
 .project {
@@ -68,7 +66,7 @@
 .project-image {
     border-radius: 2px;
     object-fit: cover;
-    object-position: left top;
+    object-position: center top;
     aspect-ratio: 8/5;
     border: none;
 }
