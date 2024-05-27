@@ -1,11 +1,11 @@
-<section [ngClass]="'projects'" id="projects">
+<section onload="this.test()" [ngClass]="'projects'" id="projects">
     <section ngClass="projects-container">
-        <section [ngClass]="'featured-project'">
-            <section [ngClass]="'featured-project-container'">
+        <section [ngClass]="'project-nav'">
+            <section [ngClass]="'project-nav-container'">
                 <h2>Projects</h2>
                 <section [ngClass]="'project-nav-links'">
-                    <button [ngClass]="'projects-link-button'">Featured project <img
-                            src="../../../assets/images/icons/one-arrow.svg" alt=""></button>
+                    <button [ngClass]="'projects-link-button'" (click)="scrollToElement('featuredProject')">Featured
+                        project <img src="../../../assets/images/icons/one-arrow.svg" alt=""></button>
                     <button [ngClass]="'projects-link-button'" (click)="scrollToElement('myProjects')">My projects <img
                             src="../../../assets/images/icons/two-arrows.svg" alt=""></button>
                     <button [ngClass]="'projects-link-button'" (click)="scrollToElement('groupProjects')">Group project
@@ -13,6 +13,47 @@
                 </section>
             </section>
         </section>
+
+        <article ngClass="featured-project" id="featuredProject">
+            <section class="featured-project-top">
+                <h3 ngClass="project-section-title">Featured project</h3>
+                <p ngClass="featured-project-timer">Changing project in  <span *ngIf="minutes !== 0"> {{ minutes }} minutes and </span> <span>{{ seconds }}  seconds</span></p>
+            </section>
+            <section ngClass="featured-project-container">
+                <section ngClass="featured-project-image-border">
+                    <img src="{{myProjectsJson[0].image}}" alt="">
+                </section>
+
+                <section ngClass="featured-project-content">
+                    <section>
+                        <p>Shop concept</p>
+                        <h4>{{myProjectsJson[0].name}}</h4>
+                        <p>{{myProjectsJson[0].description}}</p>
+                    </section>
+                    <section>
+                        <section>
+                            <h5>Group members</h5>
+                            <p><a href="">aaa</a>, <a href="">aa</a>,</p>
+                        </section>
+                        <section ngClass="project-links">
+                            <a href="" >
+                                <img src="../../../assets/images/icons/link.svg" alt="">
+                                <p>Website</p>
+                            </a>
+                            <a href="" >
+                                <img src="./../../assets/images/icons/github.svg" alt="">
+                                <p>GitHub</p>
+                            </a>
+                            <a href="">
+                                <img src="./../../assets/images/icons/figma.svg" alt="">
+                                <p>Figma</p>
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+
+        </article>
 
         <section ngClass="my-projects" id="myProjects">
             <h3 ngClass="project-section-title">My projects</h3>

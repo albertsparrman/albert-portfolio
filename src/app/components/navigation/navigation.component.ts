@@ -48,8 +48,4 @@ export class NavigationComponent {
     document.getElementById($element)?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
     this.onScroll()
   }
-
-  test() {
-    this.home = !this.home
-  }
 }

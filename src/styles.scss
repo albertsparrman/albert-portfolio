@@ -16,6 +16,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 a,
 li {
@@ -32,7 +33,7 @@ h3 {
     color: var(--color-light);
 }
 
-h4 {
+h4, h5 {
     font-family: "Alike", serif;
     color: var(--color-secondary);
 }
