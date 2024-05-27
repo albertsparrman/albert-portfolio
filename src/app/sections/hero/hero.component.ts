@@ -22,6 +22,8 @@ export class HeroComponent {
   }
 
   setHeroBooleansValue() {
+    this.resetHeroBooleans()
+
     if(this.currentArticle == 1){
       this.heroArticle1 = true
     }
@@ -34,8 +36,6 @@ export class HeroComponent {
   }
 
   heroScrollLeft() {
-    this.resetHeroBooleans()
-
     if (this.currentArticle > 1) {
       this.currentArticle -= 1
     }
@@ -47,7 +47,7 @@ export class HeroComponent {
   }
 
   heroScrollRight() {
-    this.resetHeroBooleans()
+
 
     if (this.currentArticle < 3) {
       this.currentArticle += 1
@@ -56,6 +56,11 @@ export class HeroComponent {
       this.currentArticle = 1
     }
     
+    this.setHeroBooleansValue()
+  }
+
+  heroScrollTo(scrollTo: number){
+    this.currentArticle = scrollTo
     this.setHeroBooleansValue()
   }
 }

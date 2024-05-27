@@ -16,40 +16,36 @@
 
         <article ngClass="featured-project" id="featuredProject">
             <section class="featured-project-top">
-                <h3 ngClass="project-section-title">Featured project</h3>
-                <p ngClass="featured-project-timer">Changing project in  <span *ngIf="minutes !== 0"> {{ minutes }} minutes and </span> <span>{{ seconds }}  seconds</span></p>
+                <h3 [ngClass]="['project-section-title', 'featured-project-title']">Featured project<img ngClass="grid" src="../../../assets/images/grid.png" alt=""></h3>
+                <p ngClass="featured-project-timer">Changing project in <span *ngIf="minutes !== 0"> {{ minutes }}
+                        minutes and </span> <span>{{ seconds }} seconds</span></p>
             </section>
             <section ngClass="featured-project-container">
                 <section ngClass="featured-project-image-border">
-                    <img src="{{myProjectsJson[0].image}}" alt="">
+                    <img src="{{myProjectsJson[currentFeaturedProject].image}}" alt="">
                 </section>
 
                 <section ngClass="featured-project-content">
                     <section>
-                        <p>Shop concept</p>
-                        <h4>{{myProjectsJson[0].name}}</h4>
-                        <p>{{myProjectsJson[0].description}}</p>
+                        <h5 ngClass="hero-subtitle">Webshop</h5>
+                        <h4>{{myProjectsJson[currentFeaturedProject].name}}</h4>
+                        <p>{{myProjectsJson[currentFeaturedProject].description}}</p>
                     </section>
-                    <section>
-                        <section>
-                            <h5>Group members</h5>
-                            <p><a href="">aaa</a>, <a href="">aa</a>,</p>
-                        </section>
-                        <section ngClass="project-links">
-                            <a href="" >
-                                <img src="../../../assets/images/icons/link.svg" alt="">
-                                <p>Website</p>
-                            </a>
-                            <a href="" >
-                                <img src="./../../assets/images/icons/github.svg" alt="">
-                                <p>GitHub</p>
-                            </a>
-                            <a href="">
-                                <img src="./../../assets/images/icons/figma.svg" alt="">
-                                <p>Figma</p>
-                            </a>
-                        </section>
+                    <section ngClass="project-links">
+                        <a href="">
+                            <img src="../../../assets/images/icons/link.svg" alt="">
+                            <p>Website</p>
+                        </a>
+                        <a href="">
+                            <img src="./../../assets/images/icons/github.svg" alt="">
+                            <p>GitHub</p>
+                        </a>
+                        <a href="">
+                            <img src="./../../assets/images/icons/figma.svg" alt="">
+                            <p>Figma</p>
+                        </a>
                     </section>
+
                 </section>
             </section>
 

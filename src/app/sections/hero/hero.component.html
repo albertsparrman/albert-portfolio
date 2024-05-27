@@ -6,7 +6,6 @@
     <section [ngClass]="'hero-content'">
         <button (click)="heroScrollLeft()" ngClass="hero-arrow-button"><img class="arrow-left" src="../../../assets/images/icons/arrow.svg" alt="Scroll left"></button>
 
-
         <article [ngClass]="{'hero-article': true, 'hero-article-show': heroArticle1}">
             <img [ngClass]="'about'" src="../../../assets/images/about-me-rotated.svg" alt="">
             <section>
@@ -29,12 +28,12 @@
         <button (click)="heroScrollRight()" ngClass="hero-arrow-button"><img class="arrow-right" src="../../../assets/images/icons/arrow.svg"
                 alt="Scroll right"></button>
         <section [ngClass]="'hero-carousel-position-pointers'">
-            <span
-                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle1}"></span>
-            <span
-                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle2}"></span>
-            <span
-                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle3}"></span>
+            <button
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle1}" (click)="heroScrollTo(1)">scroll to 1</button>
+            <button
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle2}" (click)="heroScrollTo(2)">scroll to 2</button>
+            <button
+                [ngClass]="{'hero-carousel-position-pointer': true, 'hero-carousel-position-pointer-active': heroArticle3}" (click)="heroScrollTo(3)">scroll to 3</button>
         </section>
     </section>
 </section>
