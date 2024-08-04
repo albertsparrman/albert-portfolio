@@ -1,0 +1,18 @@
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url(../assets/images/noise_pattern.png);
+    z-index: 12;
+    pointer-events: none;
+}
+
+main {
+    position: absolute;
+    z-index: 2;
+    top: 100vh;
+    padding: 20px;
+    padding-left: 90px;
+    
+}

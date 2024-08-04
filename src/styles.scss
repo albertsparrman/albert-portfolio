@@ -1,5 +1,5 @@
 :root {
-    --color-light: #ececec;
+    --color-light: #D0CED9;
     --color-dark: #171718;
     --color-primary: #1e3227;
     --color-secondary: #D3C7AE;
@@ -23,24 +23,22 @@ li {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: inherit;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Imbue", serif;
     font-weight: 700;
-    color: var(--color-light);
 }
 
 h4, h5 {
-    font-family: "Alike", serif;
-    color: var(--color-secondary);
+    font-family: "Inter", sans-serif;
 }
 
 p, a, li, button {
     font-family: "Inter", sans-serif;
-    color: var(--color-light);
 }
 
 .dp-none {
