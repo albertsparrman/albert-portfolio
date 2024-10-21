@@ -1,33 +1,9 @@
-.background {
-    position: fixed;
-    width: 100%;
-    background-image: url(../../../assets/images/cloud-sky.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #B02101bc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header {    
+    padding: 14px;
+    height: calc(100vh - 28px);
 }
 
-
-.logo {
-    position: absolute;
-    width: 32px;
-    z-index: 1;
-    left: 20px;
-    top: 20px;
-}
-
-.mountain {
-    position: absolute;
-    width: 100%;
-    top: 60%;
-    transform: translateY(-50%);
-    filter: drop-shadow(0px 0px 300px #D0CED9);
-}
-
-h1 {
-    font-size: 100px;
+.hero {
+    background-color: #22352d;
+    height: 80%;
 }

@@ -2,11 +2,12 @@ import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from '@angular/
 import { CommonModule } from '@angular/common';
 import projects from '../../../assets/projects.json'
 import { isPlatformBrowser } from "@angular/common"
+import { CarouselComponent } from '../../components/carousel/carousel.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CarouselComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

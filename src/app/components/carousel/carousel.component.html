@@ -1,0 +1,14 @@
+<div ngClass="carousel-wrapper">
+    <section #carousel [ngClass]="{'carousel': true, 'snap-align': !mouseDown}" (mousedown)="startDragging($event)" (mouseup)="stopDragging()"
+        (mouseleave)="stopDragging()" (mousemove)="moveEvent($event)">
+        <article *ngFor="let item of list" #carouselItem ngClass="carousel-item">
+            {{item}}
+        </article>
+        <article *ngFor="let item of list" #carouselItem ngClass="carousel-item">
+            {{item}}
+        </article>
+        <article *ngFor="let item of list" #carouselItem ngClass="carousel-item">
+            {{item}}
+        </article>
+    </section>
+</div>

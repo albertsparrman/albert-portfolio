@@ -1,6 +1,6 @@
 :root {
-    --color-light: #D0CED9;
-    --color-dark: #171718;
+    --color-light: #d2d2d2;
+    --color-dark: #0d0d0e;
     --color-primary: #1e3227;
     --color-secondary: #D3C7AE;
 }
@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 h1,

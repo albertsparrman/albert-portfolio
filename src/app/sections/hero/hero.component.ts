@@ -10,9 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class HeroComponent {
   backgroundHeight: string = '70%'
+  backgroundPosition: string = '0px'
 
   @HostListener("window:scroll", []) onWindowScroll() {
-    this.backgroundHeight = 70 - window.scrollY / 10 + '%'
-/*     alert(this.backgroundHeight) */
+    this.backgroundHeight = 70 + window.scrollY / 9 + '%'
+    this.backgroundPosition = 0 - window.scrollY + 'px'
   }
 }
